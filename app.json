@@ -1,51 +1,52 @@
 {
-    "name": "YouTube Bot",
-    "description": "A bot that can download video or audio from any website.",
-    "logo": "https://telegra.ph/file/5aee6774b3c4ab6f0b5ed.jpg",
-    "keywords": [
-        "YouTube Downloader",
-        "Video Downloader",
-        "Telegram Bot",
-        "TeleRoid Bots"
-    ],
-    "website": "https://telegram.dog/TheTeleRoid",
-    "repository": "https://github.com/P-Phreak/TG-YouTube-Uploader",
-    "success_url": "https://telegram.dog/TeleRoid14",
-    "env": {
-        "TG_BOT_TOKEN": {
-            "description": "Your Telegram Bot Token from @BotFather",
-            "value": ""
-        },
-        "API_HASH": {
-            "description": "Your API Hash from my.telegram.org",
-            "value": ""
-        },
-        "APP_ID": {
-            "description": "Your APP ID from my.telegram.org",
-            "value": ""
-        },
-        "AUDIO_THUMBNAIL": {
-            "description": "If you need to use custom thumbnail for audio files, get telegraph url of your thumbnail using @TeleRoid_Image2Link_bot and put here. If not keep No",
-            "value": "No"
-        },
-        "VIDEO_THUMBNAIL": {
-            "description": "If you need to use custom thumbnail for video files, get telegraph url of your thumbnail using @TeleRoid_Image2Link_bot and put it here. If not keep No",
-            "value": "No"
-        }
+  "name": "YouTube Bot",
+  "description": "A bot that can download video or audio from any website.",
+  "logo": "https://telegra.ph/file/5aee6774b3c4.jpg",
+  "keywords": [
+    "YouTube",
+    "Downloader",
+    "Telegram Bot",
+    "Video",
+    "Audio"
+  ],
+  "website": "https://github.com/kajal99owner/TG-YouTube-Uploader.git",
+  "repository": "https://github.com/kajal99owner/TG-YouTube-Uploader.git",
+  "success_url": "https://t.me/TeleRoid14",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Your Telegram bot token from @BotFather",
+      "value": ""
     },
-    "addons": [],
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        },
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
+    "APP_ID": {
+      "description": "Your Telegram API ID from my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Your Telegram API hash from my.telegram.org",
+      "value": ""
+    },
+    "AUDIO_THUMBNAIL": {
+      "description": "URL for audio thumbnail (use @TeleRoid_Image_2_Link). Leave blank or 'No' for default.",
+      "value": "No"
+    },
+    "VIDEO_THUMBNAIL": {
+      "description": "URL for video thumbnail (use @TeleRoid_Image_2_Link). Leave blank or 'No' for default.",
+      "value": "No"
     }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
 }
