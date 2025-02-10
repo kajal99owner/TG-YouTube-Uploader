@@ -1,7 +1,7 @@
-OpenCC
-Pillow
-Pyrogram
-TgCrypto
-ffmpeg-python
-youtube-dl
-wget
+OpenCC==1.1.2
+Pillow==9.5.0
+Pyrogram==2.0.100
+TgCrypto==1.2.2
+ffmpeg-python==0.2.0
+youtube-dl==2021.12.17  # Or yt-dlp
+wget==3.2
