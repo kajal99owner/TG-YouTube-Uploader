@@ -9,27 +9,27 @@ class Config(object):
     Provides default values if environment variables are not set.
     """
 
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7286429810:AAHBzO7SFy6AjYv8avTRKWQg53CJpD2KEbM")
     """
     Telegram bot token.  Required.
     """
 
-    APP_ID = int(os.environ.get("APP_ID", 12345))
+    APP_ID = int(os.environ.get("APP_ID", 26489431))
     """
     Telegram API ID.  Required.  Defaults to 12345 if not set.
     """
 
-    API_HASH = os.environ.get("API_HASH", "")
+    API_HASH = os.environ.get("API_HASH", "9a2fce85339bb79254a55368a61ab92f")
     """
     Telegram API hash.  Required.
     """
 
-    AUDIO_THUMBNAIL = os.environ.get("AUDIO_THUMBNAIL", "")
+    AUDIO_THUMBNAIL = os.environ.get("AUDIO_THUMBNAIL", "https://graph.org/file/b7e8484f6395a180b6380.jpg")
     """
     Path to the default audio thumbnail image.  Optional.
     """
 
-    VIDEO_THUMBNAIL = os.environ.get("VIDEO_THUMBNAIL", "")
+    VIDEO_THUMBNAIL = os.environ.get("VIDEO_THUMBNAIL", "https://t.me/kajal_developer/7")
     """
     Path to the default video thumbnail image.  Optional.
     """
